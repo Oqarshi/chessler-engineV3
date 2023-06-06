@@ -6,11 +6,11 @@
 <meta http-equiv="content-type"    content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-<title>lozza chess engine</title>
+<title>Chessler engine</title>
 
-<meta name="title"       content="lozza chess engine" />
-<meta name="description" content="lozza chess engine" />
-<meta name="keywords"    content="chess, javascript, lozza, queens, gambit, queens gambit" />
+<meta name="title"       content="chessler chess engine" />
+<meta name="description" content="chessler chess engine" />
+<meta name="keywords"    content="chess, javascript, chessler, queens, gambit, queens gambit" />
 <meta name="viewport"    content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" type="text/css" media="screen" href="bootstrap3/css/bootstrap.min.css" />
@@ -23,17 +23,17 @@ body {padding: 20px;}
 
 <body>
 
-<p>This Lozza UI allows you to type UCI commands in a console-like manner.</p>
+<p>This Chessler Engine UI allows you to type UCI commands in a console-like manner.</p>
 
 <p><b>COMMAND EXTENSIONS</b></p>
 
-<p>In addition to the standard UCI protocol, the following commands can be used, most of which also work offline; i.e. by running "node lozza.js".</p>
+<p>In addition to the standard UCI protocol, the following commands can be used, most of which also work offline..</p>
 
 <p><b>quit</b></p>
-<p>Kill the Lozza engine. In the web console only, you can use <b>start</b> to restart it.</p>
+<p>Kill the Chessler engine. In the web console only, you can use <b>start</b> to restart it.</p>
 
 <p><b>start</b></p>
-<p>Web context only. Start Lozza. i.e. create a new web worker containing the Lozza. After a start the following are automatically sent: <b>uci, ucinewgame, position startpos, board</b>.</p>
+<p>Web context only. Start Chessler. i.e. create a new web worker containing the Chessler. After a start the following are automatically sent: <b>uci, ucinewgame, position startpos, board</b>.</p>
 <p>A <b>start</b> command is issued when the console UI starts.</p>
 
 <p><b>clear</b></p>
@@ -68,9 +68,8 @@ body {padding: 20px;}
 
 <p><b>NOTES</b></p>
 <p>An explicit <b>ucinewgame</b> is needed to reset the transposition tables; and is required before the first position. It is optional during a game since it has no effect other than to clear the TT.</p>
-<p>Lozza plays it's best move when a <b>go</b> command completes, changing the current position.</p>
+<p>Chessler plays it's best move when a <b>go</b> command completes, changing the current position.</p>
 <p>The current position is unchanged after a <b>perft</b></p>
-<p><a href="https://op12no2.github.io/lozza-ui">Lozza Chess</a>
 </body>
 </html>
 
