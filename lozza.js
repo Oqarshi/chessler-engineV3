@@ -4,7 +4,7 @@
 // A Javascript chess engine inspired by Fabien Letouzey's Fruit 2.1.
 //
 
-var BUILD   = "2.5";
+var BUILD   = "3";
 var RELEASE = 1;
 var SILENT  = 0;
 
@@ -7226,7 +7226,7 @@ onmessage = function(e) {
     case 'uci':
       //{{{  uci
       
-      uci.send('id name Chessler V3',BUILD);
+      uci.send('id name Chessler Version: ',BUILD);
       uci.send('id author Omed');
       uci.send('uciok');
       
