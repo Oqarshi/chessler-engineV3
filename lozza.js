@@ -7226,8 +7226,8 @@ onmessage = function(e) {
     case 'uci':
       //{{{  uci
       
-      uci.send('id name Lozza',BUILD);
-      uci.send('id author Colin Jenkins');
+      uci.send('id name Chessler V3',BUILD);
+      uci.send('id author Omed');
       uci.send('uciok');
       
       break;
