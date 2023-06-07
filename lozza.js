@@ -7258,7 +7258,7 @@ onmessage = function(e) {
     case 'ping':
       //{{{  ping
       
-      uci.send('info string Lozza build',BUILD,HOSTS[lozzaHost],'is alive');
+      uci.send('info string Chessler Build',BUILD,HOSTS[lozzaHost],'is alive');
       
       break;
       
