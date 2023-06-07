@@ -61,6 +61,32 @@ The Analyse button will open a new web page allowing you to analyse the current 
 Both web pages will be active. It's easier to bounce between play and analyse pages using a
 laptop rather than a phone.
 
+<p>
+in the engine lines you will see an example like this:
+
+10 19/29 (-25 end) a4 Rxb3 Nd2 Rb4 Qxc5 Bg5 Rxb4 Qxb4 Qxb4 Rxb4 Nc4 Rxa4 g3 Bf6 Nxe5 Bxe5 Rb1 Bxg3
+
+In this example, we have a sequence of moves and some additional information.:
+
+10: This represents the amount of time, in seconds, 
+that the chess engine took to make its move. In this case,
+it took 10 seconds to analyze the position and decide on the move.
+
+19/29: This indicates the ply or half-move count. The numerator (19) represents
+the number of half-moves that have been played so far, and the denominator
+(29) represents the total number of half-moves in the game. 
+This information gives an idea of the current progress in the game.
+
+(-25 end): The negative sign indicates that black (the player making the move)
+has an advantage in this position. The number (-25) represents the evaluation
+of the position, suggesting that black is winning. The "end" signifies that 
+the game is in the endgame phase, which is typically characterized by fewer pieces on the board.
+There is also upperbound and lowerbound. Upperbound means the maxium the eval could be
+lower bound means the minimum it could be.
+ 
+a4 Rxb3 Nd2 Rb4 Qxc5 Bg5 Rxb4 Qxb4 Qxb4 Rxb4 Nc4 Rxa4 g3 Bf6 Nxe5 Bxe5 Rb1 Bxg3:
+these are the moves the engine is thinking of.
+
 <h3>Optional URL parameters</h3>
 
 <p><b>c=b</b>
