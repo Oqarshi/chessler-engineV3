@@ -24,7 +24,28 @@ body {padding: 20px;}
 <body>
     <section id="V1">
         <h2>V1</h2>
-        <p>Content of Section V1</p>
+<p>Features:</p>
+<ul>
+  <li>Can play as white or black</li>
+  <li>User is able to resign</li>
+  <li>Detectable 50 move rule, stalemate, checkmate, 3 fold repetition</li>
+  <li>Play custom position via FEN</li>
+  <li>10 Different time controls for Engine</li>
+  <li>Ability to take back a move</li>
+  <li>Able to change board color to 3 different colors</li>
+  <li>Goes to depth 8 in 1 second</li>
+  <li>Calculates about 860,000 nodes</li>
+</ul>
+
+<p>Known Bugs:</p>
+<ul>
+  <li>Cannot flip board</li>
+  <li>Score or Eval is not accurate</li>
+  <li>Cannot drag and drop pieces</li>
+  <li>Pieces do not light up on click when board color is changed</li>
+  <li>Board misaligned by 1-3 pixels</li>
+  <li>Only 10 different time controls for Engine</li>
+</ul>
     </section>
     
     <section id="V2">
@@ -38,3 +59,25 @@ body {padding: 20px;}
     </section>
 </body>
 </html>
+
+
+
+Features:
+
+Implementation of playing as both white and black pieces, allowing users to choose their preferred side.
+Incorporation of a resign feature, enabling users to concede the game if they decide to surrender.
+Detection and handling of the 50-move rule, stalemate, checkmate, and three-fold repetition scenarios to ensure accurate game outcomes.
+Ability to play custom positions using FEN (Forsyth-Edwards Notation), allowing users to set up specific board configurations.
+Integration of ten different time controls for the engine, providing a variety of playing speeds to cater to users' preferences.
+Implementation of a move take-back functionality, allowing users to undo their previous moves and explore alternative strategies.
+Addition of three different board color options to customize the visual appearance of the chessboard.
+Enhancement of the engine's search algorithm to reach a depth of eight plies (half-moves) within one second, enabling it to analyze positions more deeply.
+Optimization of node calculations to handle approximately 860,000 nodes per second, allowing for more efficient evaluation and decision-making.
+Known Bugs:
+
+Inability to flip the board, preventing users from viewing the board from the opposite perspective.
+Inaccurate scoring or evaluation of positions, which may lead to suboptimal moves or misjudgments by the engine.
+Lack of drag and drop functionality for moving pieces, requiring users to input moves manually.
+Failure to highlight clicked pieces when the board color is changed, potentially causing confusion during gameplay.
+Minor misalignment of the chessboard by one to three pixels, affecting the visual presentation of the game interface.
+Limited availability of only ten different time controls for the engine, potentially restricting users who prefer specific time settings.
