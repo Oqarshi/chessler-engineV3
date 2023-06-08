@@ -17,10 +17,35 @@
 <link rel="stylesheet" type="text/css" media="screen" href="css/chessboard-0.3.0.css" />
 
 <style>
-body   {padding: 20px;}
-#board {width: 100%; max-width: 350px;}
-#stats {font-weight: bold;}
-#moves {font-weight: bold;}
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group > .btn {
+  flex: 1;
+}
+
+#board {
+  width: 100%;
+  max-width: 350px;
+}
+
+#stats {
+  font-weight: bold;
+}
+
+#moves {
+  font-weight: bold;
+}
 </style>
 
 <script src="jquery-ui-1.8.24/js/jquery-1.8.2.min.js"></script>
@@ -40,8 +65,7 @@ body   {padding: 20px;}
 <a class="btn btn-info"    href="playhelp.htm">Help</a>
 </p>
 
-<p>
-<div class="btn-group">
+<p class="btn-group">
   <button type="button" class="btn btn-primary">Play</button>
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
@@ -51,11 +75,11 @@ body   {padding: 20px;}
     <li><a id="playw" href="#">With white pieces</a></li>
     <li><a id="playb" href="#">With black pieces</a></li>
   </ul>
-</div>
+</p>
 
 <a id="analyse" class="btn btn-danger" href="">Analyse</a>
 
-<div class="btn-group">
+<p class="btn-group">
   <button id="strength" type="button" class="btn btn-primary">Strength</button>
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
@@ -75,8 +99,6 @@ body   {padding: 20px;}
     <li><a id="level9"  href="#">Level 9</a></li>
     <li><a id="level10" href="#">Beth</a></li>
   </ul>
-</div>
-
 </p>
 
 <p id="stats">
