@@ -28,10 +28,12 @@ body {
 
 .btn-group {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .btn-group > .btn {
-  flex: 1;
+  margin: 0 5px;
 }
 
 #board {
@@ -65,7 +67,7 @@ body {
 <a class="btn btn-info"    href="playhelp.htm">Help</a>
 </p>
 
-<p class="btn-group">
+<div class="btn-group">
   <button type="button" class="btn btn-primary">Play</button>
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
@@ -75,11 +77,11 @@ body {
     <li><a id="playw" href="#">With white pieces</a></li>
     <li><a id="playb" href="#">With black pieces</a></li>
   </ul>
-</p>
+</div>
 
 <a id="analyse" class="btn btn-danger" href="">Analyse</a>
 
-<p class="btn-group">
+<div class="btn-group">
   <button id="strength" type="button" class="btn btn-primary">Strength</button>
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
@@ -99,7 +101,7 @@ body {
     <li><a id="level9"  href="#">Level 9</a></li>
     <li><a id="level10" href="#">Beth</a></li>
   </ul>
-</p>
+</div>
 
 <p id="stats">
 </p>
