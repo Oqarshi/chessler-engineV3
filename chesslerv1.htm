@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chessler V1 Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>File Viewer</h1>
+    <pre id="fileContent"></pre>
+  </div>
+
+<script>
+  function readFile(file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var fileContent = e.target.result;
+      document.getElementById('fileContent').textContent = fileContent;
+    };
+    reader.readAsText(file);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var pgnFile = 'Chesslerv1.pgn';
+    fetch(pgnFile)
+      .then(response => response.text())
+      .then(fileContent => {
+        document.getElementById('fileContent').textContent = fileContent;
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+  });
+</script>
+
+</body>
+</html>
