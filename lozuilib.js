@@ -9,7 +9,7 @@ lozData.next     = 0; // next board id.
 lozData.hashFull = 0;
 lozData.mvNum    = 0;
 lozData.mvStr    = '';
-lozData.source   = 'lozza.js';
+lozData.source   = 'newengine1.js';
 
 //{{{  Number.round
 
